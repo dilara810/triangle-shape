@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Write a program that takes several integers until a negative number is entered and displays those numbers 
+based on the shape of a triangle, starting from 0 and continue until the entered number reached. (Similar to 
+the ones in the example run)
+Example Run #1:
+Enter an integer (<0 to stop):0
+0  */
+
+int main(int argc, char *argv[]) 
+{
+	
+	int number,i=0,k=0;
+	printf("Enter an integer (<0 to stop):  ");
+	scanf("%d",&number);
+	
+	if(number>0)
+	{
+		for(i=0;i<=number;i++)
+		{
+			for(k=0;k<=i;k++)
+			{
+				printf("%d",k);	
+			}
+				printf("\n");
+		}
+	}
+		
+		return 0;	
+
+}
